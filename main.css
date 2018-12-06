@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+
+body {
+  margin: 30px auto;
+  max-width: 1000px;
+  font-family: 'Bitter', serif;
+  line-height: 1.5;
+  padding: 30px 20px;
+  text-align: center;
+  align-content: center;
+  color: #FFFFFF;
+  background-color: 	#21201A;
+}
+
+h1 {
+  color: #FFFFFF;
+  padding: 20px 0px 10px 0px;
+  text-decoration: underline none;
+  text-decoration-style: none;
+  text-shadow: 2px 2px none;
+  transform: rotate(0deg);
+}
+
+body {
+  background-image: none;
+  background-color: none;
+/*
+  border-top: 15px solid #7328FF;
+  border-bottom: 15px solid #7328FF;
+  border-left: 15px solid #7328FF;
+  border-right: 15px solid #7328FF;
+  */
+}
+
+a {
+  color: #7328FF;
+  text-decoration: none;
+}
+
+/* Centers images */
+
+img {
+  display: grid;
+  margin: 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px 10px 10px;
+}
+
+Create four equal columns that sits next to each other
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+/*Full screen overlay nav */
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+}
