@@ -8,7 +8,7 @@ function setup() {
 }
 
 function draw() {
-  background(255,0,0);
+  background(0,255,255);
   //top row
   image(capture,25,25,300,200);
   image(capture,350,25,300,200);
@@ -16,5 +16,4 @@ function draw() {
 	image(capture,25,250,300,200);
   image(capture,350,250,300,200);
   filter(INVERT);
-  filter(THRESHOLD);
 }
