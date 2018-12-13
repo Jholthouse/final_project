@@ -41,7 +41,7 @@ function preload(){
 
 function setup() {
   createCanvas(360, 360);
-  mySound.setVolume(0.6);
+  mySound.setVolume(0.4);
   mySound.play();
   mySound.loop()
   noCursor();
