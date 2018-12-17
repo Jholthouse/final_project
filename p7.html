@@ -6,10 +6,10 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <style>
     body {
-        font-family: 'Lato', sans-serif;
-        background-image: url(images/red2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+      font-family: 'Lato', sans-serif;
+      background-image: url(images/red2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     h1 {
       font-size: 30px;
@@ -64,9 +64,9 @@
 
     /* The dot/bullet/indicator container */
     .dot-container {
-        text-align: center;
-        padding: 20px;
-        background: none;
+      text-align: center;
+      padding: 20px;
+      background: none;
     }
 
     /* The dots/bullets/indicators */
@@ -95,18 +95,23 @@
   </head>
   <body>
     <header>
-    <a href="index.html"><h1>Welcome to my life</h1></a>
+    <h1>Discrimination</h1>
     </header>
 
     <div class="slideshow-container">
 
     <div class="mySlides">
-      <q><a href="p7-1.html">Insert thought here</a></q>
+      <q><a href="p7-1.html">How will they treat me when they find out?</a></q>
       <p class="author"></p>
     </div>
 
     <div class="mySlides">
-      <q><a href="p7-2.html">Insert thought here</a></q>
+      <q><a href="p7-2.html">What are my actions saying to those around me?</a></q>
+      <p class="author"></p>
+    </div>
+
+    <div class="mySlides">
+      <q><a href="p7-2.html">Is that because I'm gay?</a></q>
       <p class="author"></p>
     </div>
 
@@ -118,6 +123,7 @@
     <div class="dot-container">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
     <script>
@@ -148,5 +154,10 @@
       dots[slideIndex-1].className += " active";
     }
     </script>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <a href="index.html"><img src="images/rewind.png" alt="Rewind" style="float:left;width:42px;height:42px;"></a>
   </body>
 </html>
